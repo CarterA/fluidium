@@ -42,7 +42,7 @@ static NSInteger sTag = 0;
 @implementation FUBrowsaPlugIn
 
 - (id)initWithPlugInAPI:(id <FUPlugInAPI>)api {
-    if (self = [super init]) {
+    if (self = [super initWithPlugInAPI:api]) {
         self.tag = sTag++;
         self.plugInAPI = api;
         self.identifier = [NSString stringWithFormat:@"com.fluidapp.BrowsaPlugIn%d", tag];

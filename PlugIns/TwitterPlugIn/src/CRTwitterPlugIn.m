@@ -51,7 +51,7 @@ static CRTwitterPlugIn *instance = nil;
 
 
 - (id)initWithPlugInAPI:(id <FUPlugInAPI>)api {
-    if (self = [super init]) {
+    if (self = [super initWithPlugInAPI:api]) {
         
         // set instance
         instance = self;
